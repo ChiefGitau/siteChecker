@@ -1,11 +1,16 @@
-import './style.css'
+import { createApp } from 'vue'
+  import { createRouter, createWebHistory } from 'vue-router'
+  import './style.css'
+  import App from './App.vue'
+  import AuditView from './pages/AuditView.vue'
 
+  const router = createRouter({
+    history: createWebHistory(),
+    routes: [
+       { path: '/', component: AuditView },
+    ]
+  })
 
-  document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-    <div class="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div class="bg-white p-8 rounded-lg shadow-md">
-        <h1 class="text-2xl font-bold text-gray-800 mb-4"> Hello World!</h1>
-      </div>
-    </div>
-  `
-  
+  const app = createApp(App)
+  app.use(router)
+  app.mount('#app')
