@@ -8,7 +8,7 @@
       performance: 72,
       seo: 85,
       accessibility: 60,
-      security: 40,
+      novti: 40,
       overall: 64
     },
     metrics: {
@@ -36,7 +36,7 @@
         { id: 'form_labels', pass: true },
         { id: 'html_lang', pass: false }
       ],
-      security: [
+      novti: [
         { id: 'https_enabled', pass: true },
         { id: 'csp_header', pass: false },
         { id: 'hsts_header', pass: false },
@@ -64,7 +64,7 @@
       },
       {
         id: 'issue_3',
-        category: 'security',
+        category: 'novti',
         severity: 'high',
         title: 'Missing Content Security Policy',
         description: 'The site does not have a Content-Security-Policy header.',

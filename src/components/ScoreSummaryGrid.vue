@@ -25,7 +25,7 @@
     performance: props.scores.performance,
     seo: props.scores.seo,
     accessibility: props.scores.accessibility,
-    security: props.scores.security
+    novti: props.scores.novti
   }))
 
   const formatLabel = (category: ScoreCategory): string => {
@@ -33,7 +33,7 @@
       case 'performance': return 'Performance'
       case 'seo': return 'SEO'
       case 'accessibility': return 'Accessibility'
-      case 'security': return 'Security'
+      case 'novti': return 'Novti'
     }
   }
   </script>

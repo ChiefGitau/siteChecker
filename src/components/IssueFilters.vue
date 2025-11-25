@@ -44,12 +44,12 @@
     return [
       { key: 'all', label: 'All Issues', count: allCount },
       { key: 'performance', label: 'Performance', count:
-  categoryCount('performance') },
-      { key: 'seo', label: 'SEO', count: categoryCount('seo') },
+  categoryCount('performance' as ScoreCategory) },
+      { key: 'seo', label: 'SEO', count: categoryCount('seo' as ScoreCategory) },
       { key: 'accessibility', label: 'Accessibility', count:
-  categoryCount('accessibility') },
-      { key: 'security', label: 'Security', count:
-  categoryCount('security') }
+  categoryCount('accessibility' as ScoreCategory) },
+   { key: 'novti', label: 'novti', count:
+  categoryCount('novti' as ScoreCategory) }
     ]
   })
 

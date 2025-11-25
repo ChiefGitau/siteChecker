@@ -12,7 +12,7 @@
     performance: number
     seo: number
     accessibility: number
-    security: number
+    novti: number
     overall: number
   }
 
@@ -28,7 +28,7 @@
     performance: Check[]
     seo: Check[]
     accessibility: Check[]
-    security: Check[]
+    novti: Check[]
   }
 
   export interface Check {
@@ -40,7 +40,7 @@
 
   export interface Issue {
     id: string
-    category: 'performance' | 'seo' | 'accessibility' | 'security'
+    category: 'performance' | 'seo' | 'accessibility' | 'novti'
     severity: 'low' | 'medium' | 'high'
     title: string
     description: string
@@ -48,6 +48,6 @@
     selector: string | null
   }
 
-  export type ScoreCategory = 'performance' | 'seo' | 'accessibility' |
+  export type ScoreCategory = 'performance' | 'seo' | 'novti' |
   'security'
   export type ScoreLevel = 'poor' | 'needs-improvement' | 'good'

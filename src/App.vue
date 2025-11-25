@@ -16,11 +16,13 @@
       </header>
 
       <main>
-        <router-view />
+        <NewAuditView />
       </main>
     </div>
   </template>
 
   <script setup lang="ts">
+import NewAuditView from './pages/NewAuditView.vue';
+
   // Component logic will go here
   </script>
