@@ -124,6 +124,7 @@
       case 'seo': return 'SEO'
       case 'accessibility': return 'Accessibility'
       case 'novti': return 'Novti'
+      default: return 'Unknown'
     }
   }
   </script>

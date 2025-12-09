@@ -2,7 +2,7 @@
     <div :class="cardClasses" class="rounded-lg p-6 shadow-md">
         <div class="flex items-center justify-between mb-2">
             <h3 class="text-sm font-medium text-gray-600">{{ label }}</h3>
-            <div :class="badgeClasses" class="px-2 py-1 rounded-full text-xs fonst-semibold">
+            <div :class="badgeClasses" class="px-2 py-1 rounded-full text-xs font-semibold">
                 {{ scoreLabel }}
             </div>
         </div>
@@ -24,13 +24,13 @@
 import { computed } from 'vue';
 import type {ScoreCategory} from  '@/types/audit'
 
-interface Prope {
+interface Prop {
     label: string
     score: number
     category: ScoreCategory
 }
 
-const props = defineProps<Prope>();
+const props = defineProps<Prop>();
 
 const scoreLevel = computed(() => {
     if (props.score >= 80) return 'good';
@@ -49,7 +49,7 @@ const scoreLabel = computed(() => {
     }
 });
 
-const descriptopm = computed( () => {
+const description = computed( () => {
     switch (scoreLevel.value) {
         case 'good':
             return 'Your site is performing well in this area.';

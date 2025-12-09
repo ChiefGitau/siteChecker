@@ -32,8 +32,9 @@
     switch (category) {
       case 'performance': return 'Performance'
       case 'seo': return 'SEO'
-      case 'accessibility': return 'Accessibility'
       case 'novti': return 'Novti'
+      case 'accessibility': return 'Accessibility'
+      case 'security': return 'Security'
     }
   }
   </script>

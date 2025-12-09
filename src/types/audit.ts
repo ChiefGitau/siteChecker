@@ -48,6 +48,6 @@
     selector: string | null
   }
 
-  export type ScoreCategory = 'performance' | 'seo' | 'novti' |
+  export type ScoreCategory = 'performance' | 'seo' | 'novti' | 'accessibility' |
   'security'
   export type ScoreLevel = 'poor' | 'needs-improvement' | 'good'

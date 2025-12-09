@@ -100,11 +100,11 @@
   </template>
 
   <script setup lang="ts">
+  import { useRouter } from 'vue-router'
 
+  const router = useRouter()
 
   const goToNewAudit = () => {
-    console.log('Navigate to New Audit page')
-    // TODO: When router is set up, use:
-    // router.push('/new-audit')
+    router.push('/new')
   }
   </script>

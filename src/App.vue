@@ -16,14 +16,13 @@
       </header>
 
       <main>
-        <HomeView />
+        <router-view />
       </main>
     </div>
   </template>
 
   <script setup lang="ts">
-import HomeView from './pages/HomeView.vue';
-// import NewAuditView from './pages/NewAuditView.vue';
+ // import NewAuditView from './pages/NewAuditView.vue';
 
   // Component logic will go here
   </script>
