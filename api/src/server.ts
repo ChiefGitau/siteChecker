@@ -4,6 +4,10 @@
   import morgan from 'morgan';
   import dotenv from 'dotenv';
 
+
+  import { WebFetcher } from './services/fetcher';
+
+
   // Load environment variables
   dotenv.config({ path: './api/.env' });
 
@@ -31,6 +35,7 @@
   interface NotFoundResponse {
       error: string;
   }
+
 
   // Health check
   app.get('/api/health', (req: Request, res: Response<HealthCheckResponse>) => {
